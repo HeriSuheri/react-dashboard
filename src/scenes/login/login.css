@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  :root {
+    --primary-color: #c6c3c3;
+    --second-color: #ffffff;
+    --black-color: #000000;
+  }
+  
+  /* body {
+    background-image: url("http://codingstella.com/wp-content/uploads/2024/01/download-6-scaled.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  } */
+  
+  a {
+    text-decoration: none;
+    color: var(--second-color);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .zoom {
+    transition: transform 0.2s;
+    margin-left: 5px;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+  }
+  
+  .wrapper3 {
+    background-image: url("https://media.istockphoto.com/id/174777508/id/foto/mencari-virus-komputer-atau-ponsel-pintar.webp?s=1024x1024&w=is&k=20&c=XYjbmeFQku69EwAFuxPEq0FKbOUTsFqLZB4KJ0Ednpw=");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .wrapper2 {
+    background-image: url("https://images.unsplash.com/photo-1669023414166-a4cc7c0fe1f5?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .wrapper1 {
+    background-image: url("https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .login_box {
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--second-color);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 140px;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .login-header-forgot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 75px;
+    font-size: 25px;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .login-header span {
+    font-size: 30px;
+    color: var(--black-color);
+  }
+  
+  .login-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+  }
+  
+  .login-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 var(--primary-color); /* Removed space before --primary-color */
+  }
+  
+  .input_box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+  }
+  
+  .input-field {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: var(--second-color);
+    padding-inline: 20px 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+  }
+  
+  #user {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.2s;
+  }
+  
+  .input-field:focus ~ .label,
+  .input-field:valid ~ .label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--black-color);
+    padding: 0 10px;
+  }
+  
+  .labelConf {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.2s;
+  }
+  
+  .input-field-conf:focus ~ .labelConf,
+  .input-field-conf:valid ~ .labelConf {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--black-color);
+    padding: 0 10px;
+  }
+  
+  .input-field-conf {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: var(--second-color);
+    padding-inline: 20px 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+  }
+  
+  .input-submit {
+    width: 100%;
+    height: 50px;
+    background: #ececec;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .input-submit:hover {
+    background: var(--second-color);
+  }
+  
+  .register {
+    text-align: center;
+  }
+  
+  .regis {
+    text-align: center;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+  }
+  
+  .register a {
+    font-weight: 500;
+  }
+  
+  .error-user {
+    margin: -15px 15px 25px 15px;
+    font-size: 0.9em;
+    /* margin-top: 15px; */
+  }
+  
+  .errors {
+    font-size: 13;
+    color: #ff0000;
+    margin-left: -10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* @media only screen and (max-width: 767px) {
+    .wrapper {
+      padding: 20px;
+    }
+  
+    .login_box {
+      padding: 7.5em 1.5em 4em 1.5em;
+    }
+  } */
+  
+  /* RESPONSIVE LOGIN - REGISTRASI - FORGOT */
+  @media screen and (max-width: 767px) {
+    /* .wrapper1 {
+      min-height: 180vh;
+      width: auto;
+      height: auto;
+      background-image: url("https://media.istockphoto.com/id/1777088857/id/foto/konsep-keamanan-digital.jpg?s=1024x1024&w=is&k=20&c=8FVwviAXiGDjOm6xm7emZ4OHB4i1HJfgEUgCyHFn3kg=");
+      background-size: 100% 100%;
+      background-position-x: right 30px;
+      background-repeat: repeat;
+    }
+  
+    .wrapper2 {
+      width: auto;
+      height: auto;
+      background-image: url("https://media.istockphoto.com/id/1339983676/id/foto/menyentuh-konsep-pemasaran-email-orang-yang-membaca-email-di-smartphone-menerima-pesan-baru.jpg?s=1024x1024&w=is&k=20&c=nisxK5rJq-QeV7-zdI2wD31lOszFIHu68mHf27fSSTM=");
+      background-size: 100% 100%;
+      background-position-x: right 30px;
+      background-repeat: repeat;
+    }
+  
+    .wrapper3 {
+      width: auto;
+      height: auto;
+      background-image: url("https://media.istockphoto.com/id/808424876/id/foto/bidang-input-kata-sandi-dengan-gembok.jpg?s=1024x1024&w=is&k=20&c=xh9avYwzV6p21z1Oq_BMsLtPen1G67nHSB5StfU0SPk=");
+      background-size: 100% 100%;
+      background-position-x: right 30px;
+      background-repeat: repeat;
+    }
+  
+    .login_box {
+      width: 75%;
+      height: auto;
+      padding: 4.5em 1.5em 2em 1.5em;
+      margin: 10px 0;
+    }
+  
+    .login-header {
+      width: 60%;
+      height: auto;
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+  
+    .login-header-forgot {
+      width: 57%;
+      height: auto;
+      font-size: 15px;
+      padding-bottom: 7px;
+    }
+  
+    .input-field {
+      height: 35px;
+      font-size: 10px;
+    }
+  
+    .input-field-conf {
+      height: 35px;
+      font-size: 10px;
+    }
+  
+    .input-field:focus ~ .label,
+    .input-field:valid ~ .label {
+      font-size: 10px;
+      top: -15px;
+      left: 10px;
+    }
+  
+    .input-field-conf:focus ~ .labelConf,
+    .input-field-conf:valid ~ .labelConf {
+      font-size: 10px;
+      top: -15px;
+      left: 10px;
+    }
+  
+    .input-submit {
+      height: 35px;
+      font-size: 10px;
+    }
+  
+    .text {
+      font-size: 70%;
+    }
+  
+    .label {
+      font-size: 70%;
+    }
+  
+    .labelConf {
+      font-size: 70%;
+    }
+  
+    .zoom {
+      margin-left: 5px;
+      margin-bottom: 7px;
+      margin-top: -2px;
+    }
+  
+    .error-user{
+      font-size: 10px;
+    }
+  
+    .errors{
+      font-size: 10px;
+    } */
+    html {
+      zoom: 0.55;
+    }
+  
+    .wrapper1{
+      min-height: 180vh;
+    }
+  
+    .wrapper2{
+      min-height: 180vh;
+    }
+  
+    .wrapper3{
+      min-height: 180vh;
+    }
+  
+  }
+  
